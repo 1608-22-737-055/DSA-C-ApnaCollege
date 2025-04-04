@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.ejs": "html",
+        "*.sql": "bat",
+        "iostream": "cpp"
+    }
+}
