@@ -1,6 +1,19 @@
 #include<iostream>
 using namespace std ;
 
+int revInt(int num){
+    int reversed = 0 ;
+
+    while (num)
+    {
+        reversed = (reversed * 10)+(num%10);
+        num/=10;
+    }
+    return reversed;
+    
+}
+
+
 int main(){
 //Bitwise Operator 
 // And & 
@@ -113,12 +126,40 @@ cout << g << endl ; // 0
 //  signed 
 //  unsigned 
 
-cout << sizeof(int) << endl ; // 4 bytes
-cout << sizeof(long int) << endl ; 
-cout << sizeof(short int) << endl ; 
-cout << sizeof(long long) << endl ; 
-cout << sizeof(signed int) << endl ; // can store negaive and positive numbers
-cout << sizeof(unsigned int) << endl ; //always stores positive numbers
+// cout << sizeof(int) << endl ; // 4 bytes
+// cout << sizeof(long int) << endl ; 
+// cout << sizeof(short int) << endl ; 
+// cout << sizeof(long long) << endl ; 
+// cout << sizeof(signed int) << endl ; // can store negaive and positive numbers
+// cout << sizeof(unsigned int) << endl ; //always stores positive numbers
+
+/*
+int c =32 ;
+bool b =false;
+for (int i = 2; i <= c; i=i*2)
+{
+//    cout << i << endl ;
+   if (i == c)
+   {
+      b = true ;
+      cout << b << endl ;
+    }
+   else
+   {
+    b = false ;
+   }
+}*/
+
+
+// finds wheather a number n is a power of 2 or not 
+int n = 32 ;
+bool b = (n>0) && ((n&(n-1))==0) ;
+cout << b<< endl ;
+
+//reverse of an integer 
+int num = 1234567;
+
+cout << "Reversed : " << revInt(num) << endl ;
 
     return 0;
 }
