@@ -2,6 +2,10 @@
     "files.associations": {
         "*.ejs": "html",
         "*.sql": "bat",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp"
     }
 }
