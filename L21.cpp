@@ -35,9 +35,6 @@ bool isValid(vector<int> &arr , int n , int m ,int maxAllowedPages){
      return stu > m ? false : true;
    }
    
-
-
-
 int allocationBooks(vector<int> &arr , int n , int m ){
          if (m>n){ return -1 ;}
          
