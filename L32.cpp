@@ -40,7 +40,7 @@ public:
 };
     */
 
-    vector<int> chars = {"a","a","b","b","c","c","c"};
+    vector<char> chars = {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
     
     int n = chars.size();
 
