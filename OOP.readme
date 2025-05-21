@@ -1,0 +1,154 @@
+Object Oreinted Programming
+
+Classes  and objects
+ objects are entities in the real world 
+ class is like a blueprint of these entities  
+
+Access Modifiers
+- Public: Members (attributes and methods) declared as public can be accessed from anywhere in the code.
+- Private: Members declared as private can only be accessed within the class itself. They are not accessible from outside the class.
+- Protected: Members declared as protected can be accessed within the class and by derived classes (subclasses). They are not accessible from outside the class hierarchy.
+
+Encapsulation
+-  Encapsulation is wrapping up of data & member functions in a single unit called class.
+
+four principles of OOPs
+  1.Encapsulation
+  2.Abstraction
+  3.Inheritance
+  4.Polymorphism
+
+Constructuctor
+- A constructor is a special method that is called when an object is created. It initializes the object's attributes and can take parameters to set initial values.
+Special method invoked automatically at time of object creation. Used for Initialisation.
+• Same name as class
+• Constructor doesn't have a return type
+• Only called once (automatically), at object creation
+• Memory allocation happens when constructor is called
+this is a special pointer in C++ that points to the current object.
+this->prop is same as *(this).prop
+
+Mode of Inheritance
+             Derived Class     Derived Class      Derived Class
+Parent Class Private Mode      Protected Mode     Public Mode
+Private      Not Inherited     Not Inherited      Not Inherited
+Protected    Private          Protected         Protected
+Public       Private          Protected         Public
+
+types of inheritance
+- Single Inheritance: A derived class inherits from a single base class.
+- Multiple Inheritance: A derived class inherits from multiple base classes.
+- Multilevel Inheritance: A derived class inherits from a base class, which in turn inherits from another base class.
+- Hierarchical Inheritance: Multiple derived classes inherit from a single base class.
+- Hybrid Inheritance: A combination of two or more types of inheritance.
+- Friend Function: A function that is not a member of a class but has access to its private and protected members. It is declared using the `friend` keyword.
+- Friend Class: A class that is given access to the private and protected members of another class. It is declared using the `friend` keyword.
+- Static Member: A member (attribute or method) that belongs to the class itself rather than to any specific instance of the class. It is declared using the `static` keyword.
+
+Polymorphism
+Polymorphism is the ability of objects to take on different forms or behave in different
+ways depending on the context in which they are used.
+• Compile Time Polymorphism
+• Run Time Polymorphism
+• Compile Time Polymorphism: Achieved through method overloading and operator overloading.
+• Run Time Polymorphism: Achieved through method overriding and virtual functions.
+
+Run Time Polymorphism
+• Function Overriding
+Parent & Child both contain the same function with different implementation.
+The parent class function is said to be overridden.
+• Virtual Functions
+A virtual function is a member function that you expect to be redefined in derived classes.
+Virtual Functions
+• Virtual functions are Dynamic in nature.
+• Defined by the keyword "virtual" inside a base class and are always declared with a base
+class and overridden in a child class.
+• A virtual function is called during Runtime
+
+Abstraction
+Hiding all unnecessary details & showing only the important parts
+using Abstract Classes
+• Abstract classes are used to provide a base class from which other classes can be derived.
+• They cannot be instantiated and are meant to be inherited.
+• Abstract classes are typically used to define an interface for derived classes.
+
+
+Static Keyword
+• Static Variables
+Variables declared as static in a function are created & initialised once for the lifetime of the
+program. //in Function
+Static variables in a class are created & initialised once. They are shared by all the
+objects of the class. //in Class
+• Static Objects
+
+
+
+Copy Constructor
+Special Constructor (default) used to copy properties of one object into another.
+Shallow & Deep Copy
+A shallow copy of an object copies all of the member values from one object to another.
+A deep copy, on the other hand, not only copies the member values but also makes copies of
+any dynamically allocated memory that the members point to.
+
+Inheritance
+When properties & member functions of base class are passed on to the derived class.
+
+
+- Default: If no access modifier is specified, the member is accessible only within the same package (in Java) or module (in Python). It is not accessible from outside the package/module.
+- Static: Members declared as static belong to the class itself rather than to any specific instance of the class. They can be accessed without creating an object of the class.
+- Final: Members declared as final cannot be changed once they are initialized. In Java, a final class cannot be subclassed, and a final method cannot be overridden.
+- Abstract: Members declared as abstract do not have an implementation in the base class and must be implemented in derived classes. An abstract class cannot be instantiated directly.
+- Virtual: Members declared as virtual can be overridden in derived classes. They allow for dynamic polymorphism, enabling the program to choose the appropriate method at runtime based on the actual object type.
+- Const: Members declared as const cannot be modified after they are initialized. They are often used to define constants that should not change throughout the program.
+
+
+- Class: A blueprint for creating objects. It defines a set of attributes and methods that the created objects will have.
+- Object: An instance of a class. It contains data and methods defined in the class.
+- Attributes: Variables that belong to a class. They define the properties of the objects created from the class.
+- Methods: Functions that belong to a class. They define the behavior of the objects created from the class.
+- Constructor: A special method that is called when an object is created. It initializes the object's attributes.
+- Inheritance: A mechanism that allows a new class to inherit attributes and methods from an existing class. The new class is called the child class, and the existing class is called the parent class.
+- Encapsulation: A principle that restricts access to certain attributes and methods of a class. It allows for data hiding and protects the internal state of an object.
+- Polymorphism: A principle that allows different classes to be treated as instances of the same class through a common interface. It allows for method overriding and method overloading.
+- Abstraction: A principle that allows for the simplification of complex systems by hiding unnecessary details and exposing only the essential features.
+- Interface: A contract that defines a set of methods that a class must implement. It allows for multiple classes to be treated as the same type.
+- Abstract class: A class that cannot be instantiated and is meant to be subclassed. It can contain abstract methods (methods without implementation) and concrete methods (methods with implementation).
+- Composition: A design principle that allows for the creation of complex objects by combining simpler objects. It is a "has-a" relationship.
+- Aggregation: A design principle that allows for the creation of complex objects by combining simpler objects, but with a weaker relationship than composition. It is a "part-of" relationship.
+- Association: A design principle that defines a relationship between two classes. It can be one-to-one, one-to-many, many-to-one, or many-to-many.
+- Dependency: A relationship between two classes where one class depends on another class to function. It is a "uses-a" relationship.
+- Cohesion: A measure of how closely related and focused the responsibilities of a single class are. High cohesion is desirable as it makes the class easier to understand and maintain.
+- Coupling: A measure of how tightly connected two classes are. Low coupling is desirable as it makes the classes more independent and easier to maintain.
+- Design patterns: Reusable solutions to common problems in software design. They provide a template for solving a specific problem in a specific context.
+- SOLID principles: A set of five design principles that help create maintainable and scalable software. They are:
+  - Single Responsibility Principle (SRP): A class should have only one reason to change.
+  - Open/Closed Principle (OCP): A class should be open for extension but closed for modification.
+  - Liskov Substitution Principle (LSP): Subtypes must be substitutable for their base types without altering the correctness of the program.
+  - Interface Segregation Principle (ISP): A class should not be forced to implement interfaces it does not use.
+  - Dependency Inversion Principle (DIP): High-level modules should not depend on low-level modules. Both should depend on abstractions.
+- DRY (Don't Repeat Yourself): A principle that encourages the reduction of code duplication by abstracting common functionality into reusable components.
+- KISS (Keep It Simple, Stupid): A principle that encourages simplicity in design and implementation. It suggests that systems should be as simple as possible and avoid unnecessary complexity.
+- YAGNI (You Aren't Gonna Need It): A principle that suggests not adding functionality until it is necessary. It encourages developers to avoid over-engineering and focus on the current requirements.
+- TDD (Test-Driven Development): A software development process that relies on the repetition of a very short development cycle. It involves writing tests before writing the code that needs to be tested.
+- BDD (Behavior-Driven Development): An extension of TDD that focuses on the behavior of the application from the user's perspective. It encourages collaboration between developers, testers, and business stakeholders.
+- CI/CD (Continuous Integration/Continuous Deployment): A set of practices that enable developers to integrate code changes into a shared repository frequently and deploy those changes to production automatically.
+- Agile: A software development methodology that emphasizes flexibility, collaboration, and customer satisfaction. It promotes iterative development and encourages teams to respond to change.
+- Scrum: An Agile framework that provides a structured approach to managing complex projects. It involves breaking work into small, manageable pieces called sprints and emphasizes collaboration and continuous improvement.
+- Kanban: An Agile framework that focuses on visualizing work, limiting work in progress, and maximizing efficiency. It uses a Kanban board to track the flow of work items.
+- XP (Extreme Programming): An Agile software development methodology that emphasizes technical excellence, continuous feedback, and close collaboration between developers and customers. It promotes practices such as pair programming, test-driven development, and frequent releases.
+- Lean: A software development methodology that focuses on maximizing value while minimizing waste. It emphasizes continuous improvement and encourages teams to eliminate non-value-added activities.
+- DevOps: A set of practices that combines software development (Dev) and IT operations (Ops) to shorten the development lifecycle and deliver high-quality software continuously. It emphasizes collaboration, automation, and monitoring.
+- Microservices: An architectural style that structures an application as a collection of small, loosely coupled services. Each service is independently deployable and can communicate with other services through APIs.
+- REST (Representational State Transfer): An architectural style for designing networked applications. It relies on stateless communication and uses standard HTTP methods (GET, POST, PUT, DELETE) to interact with resources.
+- GraphQL: A query language for APIs that allows clients to request only the data they need. It provides a more flexible and efficient alternative to REST.
+- SOAP (Simple Object Access Protocol): A protocol for exchanging structured information in web services. It relies on XML and is often used in enterprise applications.
+- gRPC: A high-performance, open-source RPC framework that uses HTTP/2 for transport and Protocol Buffers for serialization. It is designed for low-latency and high-throughput communication between services.
+- Event-driven architecture: An architectural style that focuses on the production, detection, consumption of, and reaction to events. It allows for decoupling of components and enables real-time processing of data.
+- CQRS (Command Query Responsibility Segregation): A pattern that separates the read and write operations of a system. It allows for different models for reading and writing data, improving performance and scalability.
+- Event sourcing: A pattern that stores the state of an application as a sequence of events. It allows for easy reconstruction of the application's state and provides a complete audit trail.
+- Domain-driven design (DDD): An approach to software development that emphasizes collaboration between technical and domain experts. It focuses on creating a shared understanding of the domain and using that understanding to drive the design of the system.
+- Hexagonal architecture: An architectural pattern that emphasizes the separation of concerns and allows for easy testing and maintenance. It defines a clear boundary between the application and its external dependencies.
+- Clean architecture: An architectural pattern that emphasizes the separation of concerns and the independence of the application from external frameworks and technologies. It promotes a clear structure and allows for easy testing and maintenance.
+- Onion architecture: An architectural pattern that emphasizes the separation of concerns and the independence of the application from external frameworks and technologies. It promotes a clear structure and allows for easy testing and maintenance.
+- MVC (Model-View-Controller): A design pattern that separates an application into three interconnected components: the model (data), the view (user interface), and the controller (business logic). It promotes separation of concerns and allows for easier maintenance and testing.
+- MVP (Model-View-Presenter): A design pattern that separates an application into three components: the model (data), the view (user interface), and the presenter (business logic). It promotes separation of concerns and allows for easier maintenance and testing.  
