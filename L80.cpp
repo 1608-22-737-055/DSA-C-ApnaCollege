@@ -4,6 +4,9 @@ using namespace std;
 
 
 /*
+
+//LC-387
+
 class Solution {
 public:
     int firstUniqChar(string s) {
